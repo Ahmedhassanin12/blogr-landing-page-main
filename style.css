@@ -1,0 +1,401 @@
+/* 
+## global roles ##
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --light-red: hsl(356, 100%, 66%);
+  --very-light-red: hsl(355, 100%, 74%);
+  --heading-color: hsl(208, 49%, 24%);
+}
+body {
+  font-family: "Red Hat Text", sans-serif;
+  overflow-x: hidden;
+  font-size:62.5%;
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 100vw;
+}
+html {
+  font-size:62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth; 
+}
+ul {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+/* end of global roles */
+/*
+## first sectiont ##
+*/
+header {
+  width: 100vw;
+  height: 50vh;
+  background-image: url("/images/bg-pattern-intro-desktop.svg"),
+    linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-position: top right;
+  background-size:  130rem 70rem;
+  position: relative;
+  border-bottom-left-radius: 90px;
+  
+}
+.main-header {
+height: 8rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 5rem;
+padding-left: 6rem;
+padding-right: 3rem;
+position: relative;
+}
+
+.main-header .drop-down {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  position: absolute;
+  left: 20rem;
+}
+.first div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.first h4 {
+  color: white;
+  font-size: 1.5rem;
+  opacity: .8;
+  margin-bottom: .5rem;
+  cursor: pointer;
+}
+.first div img {
+  align-self: flex-end;
+  margin-bottom: .5rem;
+  cursor: pointer;
+}
+
+ .drop-down .first ul {
+  background-color:hsla(356, 100%, 66%, 0.815) ;
+  padding: 1rem 1rem;
+  margin-bottom: .5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: none;
+  transition: all 0.5s;
+}
+ul li {
+  padding-top: 1rem;
+}
+ul li:hover {
+  border-bottom: 1px solid white;
+}
+.drop-down .first .mo-1 {
+  display: block;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 5rem;
+}
+.login  a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.login  .sign-up {
+  padding: 0.5rem 1.2rem;
+  background-color: white;
+  color: var(--very-light-red);
+  border-radius: 12px;
+}
+.login  .sign-up:hover {
+  color: white;
+  background-color: var(--very-light-red);
+}
+.btn-mobile-nav {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  display: none;
+}
+
+.btn-mobile-nav .icon{
+  height: 3rem;
+  width: 3rem;
+  background-color: none;
+  color: #333;
+}
+.icon[name="close-outline"] {
+display: none;
+}
+.con {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.con h1 {
+  padding-top: 6rem ;
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.con p {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  opacity: 0.7;
+}
+.con  div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+div a {
+  color: white;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 10px 14px;
+  border-radius: 14px;
+}
+.con div a:first-child {
+  padding: 0.7rem 1.5rem;
+  background-color: white;
+  color: var(--very-light-red);
+}
+.con div a:first-child:hover {
+  color: white;
+  background-color: var(--very-light-red);
+}
+.con div a:last-child {
+  border: 1px solid white;
+  padding: 0.6rem 1.2rem;
+}
+.con div a:last-child:hover {
+  color: var(--very-light-red);
+  background-color: white;
+}
+
+ .btn-mobile-nav {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+  display: none;
+}
+
+ .btn-mobile-nav .icon{
+  height: 3rem;
+  width: 3rem;
+  background-color: none;
+  color: #333;
+}
+.icon[name="close-outline"] {
+display: none;
+}  
+/*
+## the end of the first sectiont ##
+*/
+/* ## second section ## */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 13rem 0;
+  padding: 4rem 0;
+}
+
+.sect-head {
+  color: hsl(208, 49%, 24%);
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8rem;
+  position: relative;
+  margin-bottom: 15rem;
+}
+.grid .img-box {
+  width: 40rem;
+  
+}
+.grid .img-box img {
+  width: 65rem;
+  position: absolute;
+  right: -15.5rem;
+  top: -15rem;
+  
+}
+.grid .text-box {
+  line-height: 1.7;
+  padding-right: 5rem;
+}
+.text-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.text-box p {
+  color: hsla(206, 13%, 34%, 0.712);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+/* ## mobilesection ## */
+.grid-2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    hsl(237, 17%, 21%),
+    hsl(237, 23%, 32%)
+  );
+  height: 35rem;
+  padding-left: 0rem;
+  border-bottom-left-radius: 8rem;
+  border-top-right-radius: 8rem;
+  position: relative;
+}
+.grid-2 .img-box {
+  padding-left: 1rem;
+  width: 70rem;
+}
+.grid-2 .img-box img {
+      width: 50rem;
+      
+}
+.grid-2 .text-box {
+  justify-self: flex-start;
+  width: 60rem;
+}
+.grid-2 .text-box h2 {
+  color: white;
+  font-size: 2.3rem;
+  margin-bottom: 1.6rem;
+  text-transform: capitalize;
+}
+.grid-2 .text-box p {
+  font-size: 1rem;
+  color: white;
+  opacity: 0.8;
+  line-height: 1.7;
+  padding-right: 10rem;
+  
+}
+/* ## end of second section ## */
+
+/* 
+## labtop section  ##
+*/
+.grid-two {
+  display: grid;
+  grid-template-columns: 30rem 40rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  margin-top: 5rem;
+}
+.grid-two .img-box {
+  align-self: start;
+  justify-self: end;
+}
+.grid-two .img-box  img {
+width: 70rem ;
+}
+.grid-two .text-box {
+  padding-top: 1rem;
+  padding-right: rem;
+}
+.grid-two .text-box h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: hsl(237, 17%, 21%);
+}
+.grid-two .text-box p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+/* 
+## End of labtop section  ##
+*/
+/*
+## footer ##
+*/
+footer {
+  margin-top: 12rem;
+  background-color: hsl(240, 10%, 16%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-top: 4rem;
+  padding-bottom: 30px;
+  border-top-right-radius: 6.7rem;
+}
+footer ul li {
+  padding-top: 1rem;
+}
+.box h4 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: aliceblue;
+}
+.box ul li {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  opacity: 0.7;
+  cursor: pointer;
+  color: aliceblue;
+}
+.box ul li:hover {
+  opacity: 1;
+  border-bottom: 1px solid white;
+}
+footer:last-child {
+  padding-right: 6rem;
+}
+/* 
+end of the footer
+*/
+
+
